@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Julia Child | Recipes</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: #BB4430;
+      padding: 20px;
+      color: #f1f1f1;
+    }
+
+    header hr {
+      border: 1px solid #f1f1f1;
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+    }
+
+    header nav {
+      margin: 10px 0 0 0;
+    }
+
+    header nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #f1f1f1;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    main h1 {
+      margin: 0 0 20px 0;
+    }
+
+    main .recipes-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 20px;
+    }
+
+    main .recipes-link {
+      text-decoration: none;
+      color: #000;
+      flex: 0 0 32%;
+    }
+
+    main .recipes-box {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 16px;
+      width: 100%;
+      height: 100%;
+      transition: box-shadow 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    main .recipes-box img {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    main .recipes-box:hover {
+      box-shadow: 0 0 0 2px #BB4430;
+    }
+
+    main .recipes-box .recipes-title {
+      margin: 0 0 10px 0;
+    }
+
+    main .recipes-box:hover .recipes-title {
+      color: #BB4430;
+    }
+
+    footer {
+      background-color: #231F20;
+      padding: 20px;
+      color: #f1f1f1;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Julia Child</h1>
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Julia Child's Recipes</h1>
+
+      <div class="recipes-container">
+
+        <a class="recipes-link" href="https://www.tablespoon.com/recipes/julia-childs-beef-bourguignon/cdda3ccc-3623-4363-8095-aaca1a3f8313" target="_blank">
+          <section class="recipes-box">
+            <img src="https://idata.hiloved.com/imgs/52be4df55fa334a2.jpg" alt="Boeuf Bourguignon">
+            <h2 class="recipes-title">Boeuf Bourguignon</h2>
+            <p class="recipes-description">Boeuf bourguignon is a traditional French meal that Julia Child made famous.
+              It's a stew made with beef
+              braised in red wine, beef broth, and seasoned with garlic, onions, and mushrooms.</p>
+          </section>
+        </a>
+
+        <a class="recipes-link" href="https://www.theendlessmeal.com/julia-childs-coq-au-vin/" target="_blank">
+          <section class="recipes-box">
+            <img src="https://idata.hiloved.com/imgs/e63f35583ecd3453.jpg" alt="Coq au Vin">
+            <h2 class="recipes-title">Coq au Vin</h2>
+            <p class="recipes-description">Coq au vin is a French dish of chicken braised with wine, lardons, mushrooms,
+              and optionally garlic. A red
+              Burgundy wine is typically used, though many regions of France make variants using local varietals, such
+              as
+              coq au vin jaune, coq au Riesling, coq au pourpre or coq au violet, coq au Champagne, etc.</p>
+          </section>
+        </a>
+
+        <a class="recipes-link" href="https://www.food.com/recipe/authentic-french-onion-soup-courtesy-of-julia-child-356428" target="_blank">
+          <section class="recipes-box">
+            <img
+              src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_744,ar_5:4/v1/img/recipes/35/64/28/hgmnEDwYTVKF6CmdG02c_3B7904B4-9E76-431B-8743-12BA1C9CF0F6.jpeg"
+              alt="French Onion Soup">
+            <h2 class="recipes-title">French Onion Soup</h2>
+            <p class="recipes-description">French onion soup is a type of soup usually based on meat stock and onions,
+              and
+              often served gratinéed with
+              croutons or a larger piece of bread covered with cheese floating on top. </p>
+          </section>
+        </a>
+
+        <a class="recipes-link" href="https://littleferrarokitchen.com/julia-childs-salad-nicoise/" target="_blank">
+          <section class="recipes-box">
+            <img src="https://tenmorebites.files.wordpress.com/2014/07/img_5564.jpg" alt="Salade Niçoise">
+            <h2 class="recipes-title">Salade Niçoise</h2>
+            <p class="recipes-description">A salade niçoise is a salad that originated in the French city of Nice. It is
+              traditionally made of tomatoes,
+              hard-boiled eggs, Niçoise olives, anchovies, and dressed with olive oil.</p>
+          </section>
+        </a>
+
+        <a class="recipes-link" href="https://anchoredbaking.com/julia-childs-crepes-suzette/" target="_blank">
+          <section class="recipes-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu_bwW88JCy5oXWmgajkS5g5kZZm883ElAnA&usqp=CAU"
+              alt="Crêpes Suzette">
+            <h2 class="recipes-title">Crêpes Suzette</h2>
+            <p class="recipes-description">Crêpes Suzette is a French dessert consisting of crêpes with beurre Suzette,
+              a
+              sauce of caramelized sugar and
+              butter, tangerine or orange juice, zest, and Grand Marnier, triple sec or orange Curaçao liqueur on top,
+              prepared in a tableside performance, flambé.</p>
+          </section>
+        </a>
+
+        <a class="recipes-link" href="https://www.tasteofhome.com/article/julia-child-chocolate-mousse-recipe/" target="_blank">
+          <section class="recipes-box">
+            <img
+              src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_33/1275548/chocolate-fondant-today-tease-170815.jpg"
+              alt="Chocolate Mousse">
+            <h2 class="recipes-title">Chocolate Mousse</h2>
+            <p class="recipes-description">Chocolate mousse is a dessert that is usually made with egg whites, whipped
+              cream, and chocolate. It is
+              usually served cold.</p>
+          </section>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Julia Child</p>
+      <strong>Created by Melisa Ozkapi</strong>
+    </div>
+  </footer>
+
+</body>
+
+</html>
